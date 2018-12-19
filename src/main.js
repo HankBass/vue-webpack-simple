@@ -1,3 +1,12 @@
-var say = require('./util');
+import Vue from 'vue';
+import App from './App.vue';
 
-say();
+import './style/common.scss';
+
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App }
+})
+
+

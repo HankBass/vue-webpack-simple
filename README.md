@@ -1,1 +1,1 @@
-# vue-webpack-simple
+基于webpack搭建的vue简易demo
