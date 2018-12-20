@@ -57,7 +57,7 @@ npm install webpack -g
 
   目录结构参考如下：
 
-  ![image](https://image-static.segmentfault.com/172/240/1722404829-5a55f92773d82_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/dist.png)
 
   #### js模块化
 
@@ -142,7 +142,7 @@ npm install webpack -g
   ```
   可以看到自动生成了一个`dist`文件夹，里面就又打包好的`build.js`
 
-  ![image](https://image-static.segmentfault.com/656/204/656204522-5a55f92726b24_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/build.png)
 
   > webpack 默认不支持转码es6，但`import` `export`这两个语法却单独支持，所以我们可以改写前面的模板化写法
 
@@ -645,17 +645,17 @@ npm install webpack -g
   ```
     created() {
         this.fetchData();
-        console.log("23333");
+        console.log("你能从控制台看到我哪个组件吗？");
     }
   ```
 
   打开控制台，可以看到
 
-  ![image](https://image-static.segmentfault.com/327/597/327597702-5a55f926ee703_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/console.png)
 
   点击这个console.log的输出地址
 
-  ![image](https://image-static.segmentfault.com/138/311/1383111606-5a55f9270291e_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/beforeMap.png)
 
   可以看到进入的是打包后的`build.js`文件，这个时候，文件已经被压缩，难以判断该代码是在哪个组件上面写的，调试的难度较大
 
@@ -673,7 +673,7 @@ npm install webpack -g
 
   可以看到
 
-  ![image](https://image-static.segmentfault.com/296/582/2965820798-5a55f926f3b0a_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/afterMap.png)
 
   > 这个时候看到的是当前组件的代码，而不是打包后的代码了。
 
@@ -681,9 +681,9 @@ npm install webpack -g
 
   执行命令`npm run build`
 
-  ![image](https://image-static.segmentfault.com/410/274/4102746376-5a55f926db050_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/beforeSize.png)
 
-  这个时候，看到打包后的`build.js`文件有587KB，对于当前项目的代码量来讲，这个体积有点过大了，我们尝试下优化
+  这个时候，看到打包后的`build.js`文件有584KB，对于当前项目的代码量来讲，这个体积有点过大了，我们尝试下优化
 
   ```
     npm install cross-env --save-dev
@@ -733,6 +733,6 @@ npm install webpack -g
 
   再尝试打包`npm run build`
 
-  ![image](https://image-static.segmentfault.com/174/634/1746349625-5a55f926d74e5_articlex)
+  ![image](https://raw.githubusercontent.com/HankBass/vue-webpack-simple/master/src/img/afterSize.png)
 
   可以看到，`build.js`的文件大小从584KB >> 188KB ，压缩的效果还是比较明显的。
