@@ -735,4 +735,4 @@ npm install webpack -g
 
   ![image](https://image-static.segmentfault.com/174/634/1746349625-5a55f926d74e5_articlex)
 
-  可以看到，`build.js`的文件大小从587KB >> 187KB ，压缩的效果还是比较明显的。
+  可以看到，`build.js`的文件大小从584KB >> 188KB ，压缩的效果还是比较明显的。
